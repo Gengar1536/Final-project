@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gen 4 Pokédex | Legendary</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <header class="home-header">
+      <h1>Generation 4 Pokédex</h1>
+
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pokedex.html">Pokédex</a></li>
+            <li><a href="starters.html">Starters</a></li>
+            <li><a href="legendary.html">Legendary</a></li>
+            <li><a href="about.html">About</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <section class="content-box">
+         <h2>Legendary & Mythical Pokémon</h2>
+
+         <!-- Buttons -->
+         <div class="toggle-buttons">
+            <button onclick="showSection('legendary')">Legendary</button>
+            <button onclick="showSection('mythical')">Mythical</button>
+         </div>
+
+         <!-- LEGENDARY -->
+         <div id="legendary" class="poke-section">
+            <h3>Legendary Pokémon</h3>
+
+            <div class="card-container">
+
+               <div class="card dialga-card">
+                  <img src="images/dialga.png" alt="Dialga">
+                  <h3>Dialga</h3>
+                  <p>Steel/Dragon</p>
+                  <p>Controls time and is said to have created it.</p>
+               </div>
+
+               <div class="card palkia-card">
+                  <img src="images/palkia.png" alt="Palkia">
+                  <h3>Palkia</h3>
+                  <p>Water/Dragon</p>
+                  <p>Controls space and bends dimensions.</p>
+               </div>
+
+               <div class="card giratina-card" onclick="toggleGiratina(event)">
+                  <img id="giratina-img" src="images/giratina.png" alt="Giratina">
+                  <h3>Giratina</h3>
+                  <p>Ghost/Dragon</p>
+                  <p>Lives in the Distortion World.</p>
+               </div>
+
+               <div class="card heatran-card">
+                  <img src="images/heatran.png" alt="Heatran">
+                  <h3>Heatran</h3>
+                  <p>Fire/Steel</p>
+                  <p>Dwells in volcanic caves.</p>
+               </div>
+
+               <div class="card cresselia-card">
+                  <img src="images/cresselia.png" alt="Cresselia">
+                  <h3>Cresselia</h3>
+                  <p>Psychic</p>
+                  <p>Brings peaceful dreams.</p>
+               </div>
+
+               <div class="card azelf-card">
+                  <img src="images/azelf.png" alt="Azelf">
+                  <h3>Azelf</h3>
+                  <p>Psychic</p>
+                  <p>The Being of Willpower.</p>
+               </div>
+
+               <div class="card uxie-card">
+                  <img src="images/uxie.png" alt="Uxie">
+                  <h3>Uxie</h3>
+                  <p>Psychic</p>
+                  <p>The Being of Knowledge.</p>
+               </div>
+
+               <div class="card mesprit-card">
+                  <img src="images/mesprit.png" alt="Mesprit">
+                  <h3>Mesprit</h3>
+                  <p>Psychic</p>
+                  <p>The Being of Emotion.</p>
+               </div>
+
+               <div class="card regigias-card">
+                  <img src="images/regigigas.png" alt="Regigigas">
+                  <h3>Regigigas</h3>
+                  <p>Normal</p>
+                  <p>Master of the Regis.</p>
+               </div>
+
+               <div class="card regirock-card">
+                  <img src="images/regirock.png" alt="Regirock">
+                  <h3>Regirock</h3>
+                  <p>Rock</p>
+                  <p>Ancient golem Pokémon.</p>
+               </div>
+
+               <div class="card regice-card">
+                  <img src="images/regice.png" alt="Regice">
+                  <h3>Regice</h3>
+                  <p>Ice</p>
+                  <p>Frozen titan Pokémon.</p>
+               </div>
+
+               <div class="card registeel-card">
+                  <img src="images/registeel.png" alt="Registeel">
+                  <h3>Registeel</h3>
+                  <p>Steel</p>
+                  <p>Indestructible metal golem.</p>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- MYTHICAL -->
+         <div id="mythical" class="poke-section hidden">
+            <h3>Mythical Pokémon</h3>
+
+            <div class="card-container">
+
+               <div class="card darkrai-card">
+                  <img src="images/darkrai.png" alt="Darkrai">
+                  <h3>Darkrai</h3>
+                  <p>Dark</p>
+                  <p>Causes nightmares to protect itself.</p>
+               </div>
+
+               <div class="card shaymin-card" onclick="toggleShaymin(event)">
+                  <img id="shaymin-img" src="images/shaymin.png" alt="Shaymin">
+                  <h3>Shaymin</h3>
+                  <p id="shaymin-type">Grass</p>
+                  <p>Gratitude Pokémon that purifies land.</p>
+               </div>
+
+               <div class="card phione-card">
+                  <img src="images/phione.png" alt="Phione">
+                  <h3>Phione</h3>
+                  <p>Water</p>
+                  <p>Drifts in warm seas.</p>
+               </div>
+
+               <div class="card manaphy-card">
+                  <img src="images/manaphy.png" alt="Manaphy">
+                  <h3>Manaphy</h3>
+                  <p>Water</p>
+                  <p>Prince of the sea.</p>
+               </div>
+
+                <div class="card arceus-card">
+                  <img src="images/arceus.png" alt="Arceus">
+                  <h3>Arceus</h3>
+                  <p>Normal</p>
+                  <p>The creator of the Pokémon universe.</p>
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+   </main>
+
+   <footer>
+      <p>Created by Mateus Guessi | IT 240 Web Fluency | Spring 2026</p>
+   </footer>
+
+   <!-- Toggle Script -->
+   <script>
+   // existing function
+   function showSection(section) {
+      document.getElementById("legendary").classList.add("hidden");
+      document.getElementById("mythical").classList.add("hidden");
+
+      document.getElementById(section).classList.remove("hidden");
+   }
+
+   // Shaymin toggle
+  let shayminSky = false;
+
+   function toggleShaymin(event) {
+      event.preventDefault();
+
+         const img = document.getElementById("shaymin-img");
+         const type = document.getElementById("shaymin-type");
+
+         if (shayminSky) {
+            img.src = "images/shaymin.png";
+            type.textContent = "Grass";
+         } else {
+            img.src = "images/shaymin-sky.png";
+            type.textContent = "Grass/Flying";
+         }
+
+         shayminSky = !shayminSky;
+      }
+
+   // Giratina toggle
+   let giratinaOrigin = false;
+   function toggleGiratina(event) {
+      event.preventDefault();
+
+      const img = document.getElementById("giratina-img");
+
+      if (giratinaOrigin) {
+         img.src = "images/giratina.png"; // Altered form
+      } else {
+         img.src = "images/giratina-origin.png"; // Origin form
+      }
+
+      giratinaOrigin = !giratinaOrigin;
+   }
+</script>
+
+</body>
+</html>
